@@ -9,14 +9,6 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/arrow"
-        android:textSize="@dimen/sp_30"
-        android:layout_centerInParent="true"
-        android:padding="@dimen/dp_20"
-        android:id="@+id/btnArrow"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:textSize="@dimen/sp_30"
         android:text="@string/Dca"
         android:textAlignment="center"
@@ -34,4 +26,14 @@
         android:background="@color/green"
         android:layout_toEndOf="@+id/btnArrow"
         android:layout_alignBaseline="@+id/btnArrow"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/arrow"
+        android:textSize="@dimen/sp_30"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/dp_10"
+        android:background="@color/red"
+        android:layout_marginLeft="-20dp"
+        android:id="@+id/btnArrow"/>
 </RelativeLayout>
