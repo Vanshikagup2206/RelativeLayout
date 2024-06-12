@@ -24,18 +24,22 @@ class MainActivity2 : AppCompatActivity() {
         btnAdd = findViewById(R.id.btnAdd)
         btnNext = findViewById(R.id.btnNext)
 
-     /*   btnMul?.setOnClickListener{
-            (btnNumber?.text.toString().trim().toInt())*2
+        btnMul?.setOnClickListener{
+            val buttonNumber = btnNumber?.text.toString().trim().toInt().times(2)
+            btnNumber?.text = buttonNumber.toString()
         }
         btnDiv?.setOnClickListener{
-            (btnNumber?.text.toString().trim().toInt())/2
+            val buttonNumber = btnNumber?.text.toString().trim().toInt().div(2)
+            btnNumber?.text = buttonNumber.toString()
         }
         btnMinus?.setOnClickListener{
-            (btnNumber?.text.toString().trim().toInt())-2
+            val buttonNumber = btnNumber?.text.toString().trim().toInt().minus(2)
+            btnNumber?.text = buttonNumber.toString()
         }
         btnAdd?.setOnClickListener{
-            (btnNumber?.text.toString().trim().toInt())+2
-        }*/
+            val buttonNumber = btnNumber?.text.toString().trim().toInt().plus(2)
+            btnNumber?.text = buttonNumber.toString()
+        }
         btnNext?.setOnClickListener{
             val intent = Intent(this,MainActivity::class.java)
             startActivity(intent)

@@ -50,13 +50,12 @@
       android:layout_toEndOf="@id/btnNumber"
       android:layout_alignBaseline="@id/btnNumber"
       android:textSize="@dimen/sp_20"/>
+
   <Button
+      android:id="@+id/btnNext"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="@string/next"
-      android:id="@+id/btnNext"
-      android:layout_margin="@dimen/dp_30"
       android:layout_below="@+id/btnDiv"
       android:layout_toEndOf="@+id/btnDiv"
-    />
+      android:text="@string/next" />
   </RelativeLayout>
