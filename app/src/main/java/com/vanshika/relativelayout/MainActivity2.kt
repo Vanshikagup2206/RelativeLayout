@@ -13,6 +13,7 @@ class MainActivity2 : AppCompatActivity() {
     private var btnMinus : Button?=null
     private var btnAdd : Button?=null
     private var btnNext : Button?=null
+    var number = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,20 +26,20 @@ class MainActivity2 : AppCompatActivity() {
         btnNext = findViewById(R.id.btnNext)
 
         btnMul?.setOnClickListener{
-            val buttonNumber = btnNumber?.text.toString().trim().toInt().times(2)
-            btnNumber?.text = buttonNumber.toString()
+            number*=2
+            btnNumber?.setText(number.toString())
         }
         btnDiv?.setOnClickListener{
-            val buttonNumber = btnNumber?.text.toString().trim().toInt().div(2)
-            btnNumber?.text = buttonNumber.toString()
+            number/=2
+            btnNumber?.setText(number.toString())
         }
         btnMinus?.setOnClickListener{
-            val buttonNumber = btnNumber?.text.toString().trim().toInt().minus(2)
-            btnNumber?.text = buttonNumber.toString()
+            number-=2
+            btnNumber?.setText(number.toString())
         }
-        btnAdd?.setOnClickListener{
-            val buttonNumber = btnNumber?.text.toString().trim().toInt().plus(2)
-            btnNumber?.text = buttonNumber.toString()
+        btnAdd?.setOnClickListener {
+            number+=2
+            btnNumber?.setText(number.toString())
         }
         btnNext?.setOnClickListener{
             val intent = Intent(this,MainActivity::class.java)
