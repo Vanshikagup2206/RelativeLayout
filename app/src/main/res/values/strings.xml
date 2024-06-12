@@ -1,6 +1,18 @@
 <resources>
     <string name="app_name">RelativeLayout</string>
-    <string name="arrow"><![CDATA[->\n<-]]></string>
+    <string name="arrow"><![CDATA[- -->\n<-- -]]></string>
     <string name="Dca">DCA\n</string>
     <string name="mars">MARS\n</string>
+    <string name="space_stations">Space Stations</string>
+    <string name="flights">Flights</string>
+    <string name="rovers">Rovers</string>
+    <string name="oneway">One Way </string>
+    <string name="traveller">1 Traveller</string>
+    <string name="number">Number</string>
+    <string name="mul">*</string>
+    <string name="divide">//</string>
+    <string name="minus">-</string>
+    <string name="add">+</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
 </resources>

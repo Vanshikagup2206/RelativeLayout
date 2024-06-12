@@ -1,39 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/btnDca"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/sp_30"
+        android:layout_alignBaseline="@+id/btnArrow"
+        android:layout_marginStart="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginEnd="@dimen/dp_30"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:layout_toStartOf="@+id/btnArrow"
+        android:background="@color/green"
+        android:padding="@dimen/dp_30"
         android:text="@string/Dca"
         android:textAlignment="center"
-        android:background="@color/green"
-        android:padding="@dimen/dp_20"
-        android:layout_toStartOf="@+id/btnArrow"
+        android:textColor="#263238"
+        android:textSize="@dimen/sp_30"
+        tools:ignore="RelativeOverlap" />
+
+    <TextView
+        android:id="@+id/btnMars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/btnArrow"
-        android:id="@+id/btnDca"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/mars"
-        android:padding="@dimen/dp_20"
-        android:textSize="@dimen/sp_30"
-        android:background="@color/green"
+        android:layout_marginStart="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginEnd="@dimen/dp_30"
+        android:layout_marginBottom="@dimen/dp_30"
         android:layout_toEndOf="@+id/btnArrow"
-        android:layout_alignBaseline="@+id/btnArrow"/>
+        android:background="@color/green"
+        android:padding="@dimen/dp_30"
+        android:text="@string/mars"
+        android:textColor="#263238"
+        android:textSize="@dimen/sp_30" />
+
     <TextView
+        android:id="@+id/btnArrow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/arrow"
-        android:textSize="@dimen/sp_30"
         android:layout_centerInParent="true"
+        android:layout_marginStart="-50dp"
+        android:layout_marginEnd="-50dp"
+        android:background="@color/white"
         android:padding="@dimen/dp_10"
-        android:background="@color/red"
-        android:layout_marginLeft="-20dp"
-        android:id="@+id/btnArrow"/>
+        android:text="@string/arrow"
+        android:textSize="@dimen/sp_30" />
+
+    <TextView
+        android:id="@+id/btnSpaceStation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/btnFlights"
+        android:layout_alignBaseline="@+id/btnFlights"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:text="@string/space_stations"
+        android:textSize="@dimen/sp_20" />
+    <TextView
+        android:id="@+id/btnFlights"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnDca"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:text="@string/flights"
+        android:textSize="@dimen/sp_20" />
+    <TextView
+        android:id="@+id/btnRovers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/btnFlights"
+        android:layout_alignBaseline="@+id/btnFlights"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:text="@string/rovers"
+        android:textSize="@dimen/sp_20" />
+    <TextView
+        android:id="@+id/btnOneWay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDca"
+        android:background="@color/orange"
+        android:textColor="@color/white"
+        android:padding="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:text="@string/oneway"
+        android:textSize="@dimen/sp_20" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDca"
+        android:layout_alignBaseline="@+id/btnOneWay"
+        android:layout_marginStart="-50dp"
+        android:layout_toEndOf="@+id/btnOneWay"
+        android:minWidth="48dp"
+        android:minHeight="48dp" />
+    <TextView
+        android:id="@+id/btnTraveller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnOneWay"
+        android:background="@color/orange"
+        android:textColor="@color/white"
+        android:padding="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:text="@string/traveller"
+        android:textSize="@dimen/sp_20" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnTraveller"
+        android:text="@string/previous"
+        android:layout_margin="@dimen/dp_20"
+        android:padding="@dimen/dp_20"
+        android:id="@+id/btnPrevious"
+        />
 </RelativeLayout>

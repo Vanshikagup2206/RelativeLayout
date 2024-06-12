@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/btnNumber"
+      android:layout_centerInParent="true"
+      android:text="@string/number"
+      android:textSize="@dimen/sp_20"/>
+
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/btnMul"
+      android:layout_above="@id/btnNumber"
+      android:layout_centerHorizontal="true"
+      android:text="@string/mul"
+      android:textSize="@dimen/sp_20"/>
+
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/btnDiv"
+      android:text="@string/divide"
+      android:layout_below="@id/btnNumber"
+      android:layout_centerHorizontal="true"
+      android:textSize="@dimen/sp_20"/>
+
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/minus"
+      android:id="@+id/btnMinus"
+      android:layout_toStartOf="@id/btnNumber"
+      android:layout_alignBaseline="@id/btnNumber"
+      android:textSize="@dimen/sp_20"
+      tools:ignore="RelativeOverlap" />
+
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/btnAdd"
+      android:text="@string/add"
+      android:layout_toEndOf="@id/btnNumber"
+      android:layout_alignBaseline="@id/btnNumber"
+      android:textSize="@dimen/sp_20"/>
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/next"
+      android:id="@+id/btnNext"
+      android:layout_margin="@dimen/dp_30"
+      android:layout_below="@+id/btnDiv"
+      android:layout_toEndOf="@+id/btnDiv"
+    />
+  </RelativeLayout>
